@@ -10,60 +10,55 @@
     <header>
       <h1>ToDo Tasks</h1>
     </header>
-    <main>
-      <div>
-        <section>
-          <h3>OVERDUE</h3>
-          <ul>
-            <li>
-              <ul>
-                <li>JavaScript challenges</li>
-                <li>31st Oct 2024</li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>Get groceries</li>
-                <li>27th Oct 2024</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h3>PENDING</h3>
-          <ul>
-            <li>
-              <ul>
-                <li>Portfolio project</li>
-                <li>1st Nov 2024</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h3>COMPLETED</h3>
-          <ul>
-            <li>
-              <ul>
-                <li>Laundry</li>
-                <li>1st Oct 2024</li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>Run 5km</li>
-                <li>12th Oct 2024</li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>Visit grandma</li>
-                <li>15th Oct 2024</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-      </div>
+    <header class="header">
+      <h1 class="header__title">ToDo Tasks</h1>
+    </header>
+
+    <main class="tasks">
+      <!-- OVERDUE -->
+      <section class="task-category task-category--overdue">
+        <h2 class="task-category__title">Overdue</h2>
+        <ul class="task-list">
+          <li class="task">
+            <span class="task__name">JavaScript challenges</span>
+            <time class="task__date">31 Oct 2024</time>
+          </li>
+          <li class="task">
+            <span class="task__name">Get groceries</span>
+            <time class="task__date">27 Oct 2024</time>
+          </li>
+        </ul>
+      </section>
+
+      <!-- PENDING -->
+      <section class="task-category task-category--pending">
+        <h2 class="task-category__title">Pending</h2>
+        <ul class="task-list">
+          <li class="task">
+            <span class="task__name">Portfolio project</span>
+            <time class="task__date">1 Nov 2024</time>
+          </li>
+        </ul>
+      </section>
+
+      <!-- COMPLETED -->
+      <section class="task-category task-category--completed">
+        <h2 class="task-category__title">Completed</h2>
+        <ul class="task-list">
+          <li class="task">
+            <span class="task__name">Laundry</span>
+            <time class="task__date">1 Oct 2024</time>
+          </li>
+          <li class="task">
+            <span class="task__name">Run 5km</span>
+            <time class="task__date">12 Oct 2024</time>
+          </li>
+          <li class="task">
+            <span class="task__name">Visit grandma</span>
+            <time class="task__date">15 Oct 2024</time>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
